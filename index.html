@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>
+            Survey Form
+        </title>
+        <link rel="stylesheet" href="styles.css"/>
+        <div>
+            <h1 id="title">AIA Feedback Form</h1>
+        </div>
+        
+        <div>
+            <p id="description">Thank you for filling this form<p>
+        </div>
+    </head>
+
+
+    <body>
+        <form id="survey-form">
+          <label id="name-label" for="name">Name</label><br>
+          <input type="text" id="name" name="name-label" placeholder="Enter your name" required><br><br>
+          <label id="email-label"for="email">Email</label><br>
+          <input type="email" id="email" name="form-input" placeholder="Enter your email" required><br><br>
+          <label id="number-label" for="number">Age (optional)</label><br>
+          <input type="number" id="number" name="form-input" placeholder="Enter your age" min="10" max="100" required><br><br>
+          <label for="dropdown">Which option best describes your current role</label><br>
+          <select id="dropdown" name="form-input">
+            <option value="student">Select current role</option>
+            <option value="student">Student</option>
+            <option value="assoc-architect">Assoc. Architect</option>
+            <option value="architect">Architect</option>
+            <option value="educator">Educator</option>
+            <option value="contractor">Contractor</option>
+            <option value="material-rep">Material Representative</option>
+          </select><br><br>
+          <label for="form-input-1">Would you recommend AIA meetings to your friend?</label><br>
+          <label for="form-input-1">
+            <input type="radio" id="form-input-1" name="form-input-1" value="definitely">Definitely</label><br>
+          <label for="form-input-1">
+            <input type="radio" id="form-input-1" name="form-input-1" value="maybe">Maybe</label><br>
+          <label for="form-input-1">
+            <input type="radio" id="form-input-1" name="form-input-1" value="not-sure">Not Sure</label><br><br>
+          
+          <label for="dropdown">What is your favorite event during the monthly meetings?</label><br>
+          <select id="dropdown" name="form-input">
+            <option value="student">Select an option</option>
+            <option value="networking">Networking</option>
+            <option value="free-drinks">Free Drinks</option>
+            <option value="free-food">Free Food</option>
+            <option value="spin">Spin the wheel</option>
+            <option value="movie-night">Movie night</option>
+            <option value="volunteer">Volunteering Night</option>
+          </select><br><br>
+          <label for="form-input-2">What would you like to see improved?</label><br>
+          <label for="form-input-2">
+            <input type="checkbox" id="form-input-2" name="form-input-2" value="location">Location</label><br>
+          <label for="form-input-2">
+            <input type="checkbox" id="form-input-2" name="form-input-2" value="sponsors">Sponsors</label><br>
+          <label for="form-input-2">
+            <input type="checkbox" id="form-input-2" name="form-input-2" value="types-events">Types of events</label><br>
+          <label for="form-input-2">
+            <input type="checkbox" id="form-input-2" name="form-input-2" value="number-events">No. of events</label><br>
+          <label for="form-input-2">
+            <input type="checkbox" id="form-input-2" name="form-input-2" value="day-of-month">Day of the month</label><br>
+          <label for="form-input-2">
+            <input type="checkbox" id="form-input-2" name="form-input-2" value="time-of-month">Time of the month</label><br>
+          <label for="form-input-2">
+            <input type="checkbox" id="form-input-2" name="form-input-2" value="meetup">Meetup Meeting</label><br><br>
+          <label for="textarea">Any comments or suggestions?</label><br>
+          <textarea type="text" id="textarea" name="form-input" placeholder="Enter your comment here" required></textarea><br><br>
+          <button type="submit" id="submit">Submit</button>
+          <br><br>
+        </form>
+      </body>
